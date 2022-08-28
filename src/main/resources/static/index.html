@@ -7,8 +7,13 @@
 <body>
  hello world
 </body>
-<form action="/query.do" method="post">
-    <input type="text" name="id">
+<form action="https://api-dev.vlauncher.com/jeecg-boot/apis/login" method="post"
+enctype="application/json"
+>
+    <label>
+        <input type="text" name="username" value="admin">
+        <input type="text" name="password" value="test123+">
+    </label>
     <input type="submit" value="submit">
 
 </form>

@@ -1,9 +1,9 @@
 package com.zc.services.impl;
 
 import com.zc.dao.UserMapper;
-import com.zc.domain.User;
 import com.zc.domain.Users;
 import com.zc.services.UserService;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,15 +19,10 @@ import org.springframework.stereotype.Service;
 public class UserserviceImpl implements UserService {
     @Autowired
     UserMapper userMapper;
-    /**
-     * @return
-     */
-    @Override
-    public User getUser() {
-        return userMapper.getUser();
-    }
 
     /**
+     *
+     * @param id
      * @return
      */
     @Override

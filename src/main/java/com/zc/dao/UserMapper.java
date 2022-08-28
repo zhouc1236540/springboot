@@ -1,6 +1,5 @@
 package com.zc.dao;
 
-import com.zc.domain.User;
 import com.zc.domain.Users;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -14,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface UserMapper {
-    User getUser();
+
     Users getU(Integer id);
 }

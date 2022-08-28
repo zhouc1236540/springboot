@@ -1,6 +1,5 @@
 package com.zc.services;
 
-import com.zc.domain.User;
 import com.zc.domain.Users;
 
 /**
@@ -12,6 +11,6 @@ import com.zc.domain.Users;
  * Description: 服务接口
  */
 public interface UserService {
-    User getUser();
+
     Users getU(Integer id);
 }

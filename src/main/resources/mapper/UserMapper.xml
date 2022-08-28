@@ -4,19 +4,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zc.dao.UserMapper">
 
-    <select id="getUser" resultType="com.zc.domain.User">
+   <!-- <select id="getUser" resultType="com.zc.domain.User">
 
-        select * from  Users where id=1;
+        select * from  tb_User where id=1;
 
-    </select>
+    </select>-->
     <select id="getU" resultMap="getU">
 
-      select user_id ,user_name,user_password from tb_user where user_id =#{id} ;
+      select user_id ,user_name,user_password,user_email from tb_user where user_id =#{id} ;
     </select>
     <resultMap id="getU" type="com.zc.domain.Users">
         <result column="user_id" property="id" />
         <result column="user_name" property="name" />
         <result column="user_password" property="password" />
+        <result column="user_email"  property="user_email" />
 
     </resultMap>
 
